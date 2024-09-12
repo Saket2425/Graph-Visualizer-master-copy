@@ -1,70 +1,39 @@
-# Getting Started with Create React App
+# Graph Visualizer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Graph Visualizer is an interactive web app for creating and visualizing graphs with support for algorithms like DFS, BFS, and Dijkstra's. It uses a physics-based, force-directed layout where nodes repel each other and edges pull connected nodes, offering an intuitive visualization experience.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Interactive Graph Creation**: Add nodes and edges dynamically with customizable weights.
+- **Graph Algorithms**: Visualize DFS, BFS, and Dijkstra's algorithms with real-time, step-by-step animations.
+- **Force-Directed Layout**: Nodes and edges naturally organize using attraction-repulsion physics.
+- **Dynamic Updates**: Node distances and edge states update dynamically during algorithm execution.
 
-### `npm start`
+## Visualization
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The graph layout uses forces:
+- **Repulsion**: Nodes push each other apart to avoid overlap.
+- **Attraction**: Edges act like springs, pulling connected nodes closer together.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+This creates a visually appealing, auto-organizing graph.
 
-### `npm test`
+![Graph Visualization](./images/graph-visualization.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Algorithms
 
-### `npm run build`
+### 1. **Depth-First Search (DFS)**
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+DFS explores as far as possible down each branch before backtracking.  
+![DFS Animation](./gifs/dfs.gif)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 2. **Breadth-First Search (BFS)**
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+BFS explores the graph level by level, visiting all neighbors before moving to the next level.  
+![BFS Animation](./gifs/bfs.gif)
 
-### `npm run eject`
+### 3. **Dijkstra's Algorithm**
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+Finds the shortest path from the start node, updating distances dynamically.  
+![Dijkstra Animation](./gifs/dijkstra.gif)
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
