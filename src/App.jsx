@@ -4,6 +4,7 @@ import Graph from './utils/Graph';
 import DFSVisualizer from './components/DFSVisualizer';
 import BFSVisualizer from './components/BFSVisualizer';
 import DijkstraVisualizer from './components/DijkstraVisualizer';
+import './App.css';  // Make sure you import the updated CSS
 
 const App = () => {
   const [graph] = useState(new Graph(false)); // Create an undirected graph by default
@@ -49,9 +50,10 @@ const App = () => {
   };
 
   return (
-    <div>
+    <div className="container">
       <h1>Graph Visualizer</h1>
-      <div>
+
+      <div className="input-group">
         <button onClick={addNode}>Add Node</button>
         <input
           type="text"
@@ -73,9 +75,12 @@ const App = () => {
         />
         <button onClick={addEdge}>Add Edge</button>
       </div>
-      <GraphVisualizer graphData={graphData} />
 
-      <div>
+      <div className="graph-visualizer">
+        <GraphVisualizer graphData={graphData} />
+      </div>
+
+      <div className="input-group">
         <input
           type="text"
           value={startNode}
