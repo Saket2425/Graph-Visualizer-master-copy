@@ -1,0 +1,50 @@
+.app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.controls {
+  margin-top: 20px;
+}
+
+.controls input[type="text"],
+.controls input[type="number"] {
+  margin-right: 10px;
+  padding: 5px;
+}
+
+.controls button {
+  padding: 5px 10px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.controls button:hover {
+  background-color: #45a049;
+}
+
+.graph-data ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.graph-data li {
+  margin-bottom: 5px;
+}
+
+.graph-data button {
+  margin-left: 10px;
+  padding: 2px 5px;
+  background-color: #f44336;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.graph-data button:hover {
+  background-color: #d32f2f;
+}
