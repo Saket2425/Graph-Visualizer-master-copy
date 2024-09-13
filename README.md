@@ -17,23 +17,26 @@ The graph layout uses forces:
 
 This creates a visually appealing, auto-organizing graph.
 
-![Graph Visualization](./images/graph-visualization.png)
+<img width="1324" alt="Graph Visualisation" src="https://github.com/user-attachments/assets/bd6f8906-ee04-496f-98cf-22c11c17c9df">
+
 
 ## Algorithms
 
 ### 1. **Depth-First Search (DFS)**
 
 DFS explores as far as possible down each branch before backtracking.  
-![DFS Animation](./gifs/dfs.gif)
+<img src="https://github.com/user-attachments/assets/b2856e51-1785-4984-9603-3643907e8ce1" alt="DFS Visualization" width="700" height="350">
 
 ### 2. **Breadth-First Search (BFS)**
 
 BFS explores the graph level by level, visiting all neighbors before moving to the next level.  
-![BFS Animation](./gifs/bfs.gif)
+<img src="https://github.com/user-attachments/assets/1c505c34-b620-4004-a6ba-16f17a1c5158" alt="BFS Visualisation" width="700" height="350">
 
 ### 3. **Dijkstra's Algorithm**
 
 Finds the shortest path from the start node, updating distances dynamically.  
-![Dijkstra Animation](./gifs/dijkstra.gif)
+<img src="https://github.com/user-attachments/assets/01fd8702-946d-4946-8842-7581b84c1044" alt="BFS Visualisation" width="700" height="350">
+
+
 
 
